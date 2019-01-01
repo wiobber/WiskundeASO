@@ -1,0 +1,124 @@
+\documentclass[12pt]{article}
+%\setlength{\parindent}{0pt}
+
+\usepackage[utf8]{inputenc}
+%\usepackage[T1]{fontenc}
+
+\newcommand{\bD}{\mathbf{D}}
+\newcommand{\dd}{\mathrm{d}}
+\newcommand{\ab}{\left[ a, b\right]}
+
+\usepackage{pgf,tikz}
+\usepackage{mathrsfs}
+\usetikzlibrary{arrows}
+
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amssymb}
+%\usepackage{enumerate}
+\usepackage[left=2cm, right=4.5cm,top=2cm,bottom=0pt]{geometry}
+\usepackage{ulem}
+\usepackage[dutch]{babel}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+%\usepackage{enumitem}
+%\usepackage{multicol}
+\usepackage{tabularx}
+
+\usepackage{pgfplots}
+\usepackage{float}
+
+\usepackage{bbding}
+
+\theoremstyle{definition}
+\newtheorem*{eigenschap}{Eigenschap}
+\newtheorem{opgave}{Opgave}
+\newtheorem*{definitie}{Definitie}
+
+\pagenumbering{gobble}
+
+\usepackage{rotating, graphicx}
+
+
+\usepackage[absolute]{textpos}
+\usepackage{arydshln}
+
+\author{Wim Obbels}
+\lhead{}
+\chead{}
+\lhead{(Werkblad 4de jaar, HHC Tervuren, versie \today) \hfill \thepage}
+\cfoot{}
+
+\begin{document}
+
+
+
+% Het afscheurstrookje
+\textblockorigin{0mm}{0mm}
+\begin{textblock}{1}(13,0)
+\begin{turn}{90}
+\ScissorLeft
+\begin{tabularx}{\paperheight}{p{1cm}| X  p{1cm}}
+\hdashline
+\ScissorRightBrokenTop	& VOORKANT EN BOVENKANT & \ScissorRightBrokenTop \\
+\hline
+$r_1$ & & \\	
+\hline
+$r_2$ & & \\	
+\hline
+$r_3$ & & \\	
+\hline
+$r_4$ & & \\	
+\hline
+\end{tabularx}
+\end{turn}
+\end{textblock}
+%einde afscheurstrookje
+
+\section*{De Domme Kromme (Deel 1)}
+			
+\begin{opgave}
+Voer nauwgezet volgende op het eerste zicht wat domme procedure uit:
+\begin{enumerate}
+	\setlength\itemsep{0.1em}
+	\item Scheur de rechterstrook van dit papier (vouw eerst langs de stippellijn). 
+	\item Leg de strook papier voor je.
+	\item Vouw de strook in het midden dubbel, door de rechterhelft boven op de linkerhelft te leggen.
+	\item Vouw de strook terug open. Ze heeft nu in het midden een 'ingedeukte plooi' die enigszins lijkt op een opengeplooide $\vee$. Schrijf op de strook in de rij met $r_1$ op de plaats van de plooi een 1.
+	\item Vouw de strook terug dicht, en herhaal de procedure: vouw nog een keer in het midden, zodat de rechterkant nogmaals op de linkerkant komt te liggen. 
+	\item Vouw terug open. De strook heeft nu drie plooien. Schrijf in de rij $r_2$ een '1' in de eerste twee plooien (die als een $\vee$ 'ingedeukt' zijn), en een '0' in de derde plooi (die als een $\wedge$ 'naar boven' plooit).
+	\item Herhaal deze procedure nogmaals, en vul op dezelfde wijze rij $r_3$ aan: een $1$ in elke $\vee$ plooi, en een 0 in elke $\wedge$ plooi.
+	\item Herhaal deze procedure nogmaals, en vul rij ook $r_4$ aan.
+\end{enumerate}
+
+\end{opgave}
+
+\begin{opgave}
+	
+Formuleer enkele vragen (maximum drie) over bovenstaande  procedure of over de resulterende strook papier waarop (optie 1) je zelf het antwoord zou willen weten, of (optie 2) waarvan je denkt dat je ouders het antwoord wel zouden willen weten, of (optie 3) waarvan je denkt dat je leraar wiskunde ze interessant zal vinden, maar ze waarschijnlijk NIET zal kunnen oplossen. Het is niet belangrijk dat je zelf het antwoord weet, of denkt te zullen kunnen vinden, op je vragen. De vragen die meeste leerlingen interessant vinden, zullen we in de klas samen proberen oplossen.
+
+\begin{itemize}
+	\item Vraag 1 (voor mezelf / mijn ouders / mijn leerkracht): 
+	\vspace{2cm}
+	\item Vraag 2 (voor mezelf / mijn ouders / mijn leerkracht): 
+	\vspace{1cm}
+	\item Vraag 3 (voor mezelf / mijn ouders / mijn leerkracht): 
+	\vspace{1cm}
+
+\end{itemize}
+\end{opgave}
+
+\begin{opgave}
+Onderzoek de rijen $r_1$, $r_2$, $r_3$ en $r_4$ zoals ze op je stook papier staan. Probeer één of ander stukje regelmaat te vinden. Hint/suggestie: probeer eventueel een mogelijke betekenis en verklaring te vinden voor volgende formule (en dus ook voor de streep boven de tweede $r_{k-1}$!):
+\[
+r_k = r_{k-1}1\overline{r_{k-1}}
+\] 
+
+\end{opgave}
+\begin{opgave} (Extra) Wat zou een mogelijke motivatie kunnen geweest zijn om als titel van dit werkblad te kiezen voor 'De Domme Kromme'? Waar is er een kromme? 
+\end{opgave}
+{
+\footnotesize
+Referentie: Zie Uitwiskeling 14/1 (1997) en P. Scott, Taming the Dragon, Mathematics in School, jan 97.
+}
+\end{document}
